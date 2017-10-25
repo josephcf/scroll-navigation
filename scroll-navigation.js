@@ -1,5 +1,4 @@
 'use strict';
-(function($){
 
     function scrollNav(offset,navCont,dataCont,linkClass,activeClass,contentClass){
         this.navCont = navCont || 'nav';
@@ -27,6 +26,7 @@
         _self.contentBlocks.each(function(element) {
             _self.elePos.push( {top: _self.contentBlocks[element].offsetTop} );
         });
+
         $(window).on('scroll',_self.scrollHandler.bind(_self));
     }
 
@@ -51,9 +51,3 @@
 
     }
 
-    $(document).ready(function(){
-        var s = new scrollNav();
-        s.init();
-    });
-
-})(jQuery)
