@@ -7,6 +7,9 @@ Default classes are :
 'scrollNav-active' --- active class for highlighting the active contnet link
 'scrollNav-content' -- the class marking the content block
 
+#dependency
+requires jQuery library
+
 #Usage:
 
 $(document).ready(function(){
